@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* colocar o background na propria imagem e não criar uma outra div, lógica = passar mouse
+ = background cyan + imagem do olho
+ 
+ ou só trocar a posicao dele quando o mouse passar por cimaa*/
+
+:root {
+    --color-soft-blue: hsl(215, 51%, 70%);
+    --color-cyan: hsl(178, 100%, 50%);
+    --color-dark-blue-back: hsl(217, 54%, 11%);
+    --color-dark-blue-card: hsl(216, 50%, 16%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+
+body {
+    background-color: var(--color-dark-blue-back);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.eye-hover img {
+    width: auto;
+    height: auto;
+    opacity: 0;
+}
+
+.eye-hover img:hover {
+    opacity: 1;
+}
+
+.eye-hover:hover {
+    background-color: rgba(0, 255, 247, 0.5);
+}
+
+
+.eye-hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 255, 247, 0);
+    position: relative;
+    top: -305px;
+    cursor: pointer;
+}
+
+
+.container {
+    width: 21.875rem;
+    height: 37.5rem;
+    background-color: var(--color-dark-blue-card);
+    border-radius: 0.5rem;
+}
+
+
+.content {
+    padding: 1.5rem 1.5rem 0px 1.5rem;
+}
+
+img {
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 0.5rem;
+}
+
+.avatar img {
+    width: 2.188rem;
+    height: 2.188rem;
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+}
+
+.eth img {
+    width: auto;
+    height: auto;
+}
+
+.description h1 {
+    color: var(--color-white);
+    font-size: 1.1rem;
+    margin: 1.75rem 0px;
+    cursor: pointer;
+}
+
+h1:hover {
+    color: var(--color-cyan);
+}
+
+.description p {
+    color: var(--color-cyan);
+    opacity: 45%;
+    margin-bottom: 1.75rem;
+}
+
+.eth {
+    margin-bottom: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-eth {
+    color: var(--color-cyan);
+}
+
+.price_days p {
+    color: var(--color-cyan);
+}
+
+hr {
+    color: var(--color-soft-blue);
+    opacity: 30%;
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.text-avatar {
+    color: var(--color-white) !important;
+    cursor: pointer;
+}
+
+.text-avatar:hover {
+    color: var(--color-cyan) !important;
+}
+
+.time p {
+    color: var(--color-soft-blue);
+    opacity: 45%;
+}
+
+.time {
+    display: flex;
+    gap: 0.563rem;
+    align-items: center;
+}
+
+.etherium {
+    display: flex;
+    gap: 0.563rem;
+    align-items: center;
+}
+
+strong {
+    color: var(--color-cyan);
+    opacity: 45%;
+}
+
+.description {
+    margin-top: -300px;
+}
+
+/*  */
